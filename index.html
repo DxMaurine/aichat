@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Prompt Generator</h1>
+            <p>Buat prompt AI yang efektif seperti di ChatGPT</p>
+        </header>
+        
+        <main>
+            <div class="chat-container">
+                <div class="chat-display" id="chatDisplay">
+                    <!-- Pesan akan muncul di sini -->
+                </div>
+                
+                <div class="input-area">
+                    <textarea id="userInput" placeholder="Ketik prompt Anda di sini..."></textarea>
+                    <button id="sendButton">Kirim</button>
+                    <button id="clearButton">Bersihkan</button>
+                </div>
+            </div>
+
+            <select id="modelSelector">
+                <option value="openai/gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                <option value="openai/gpt-4">GPT-4</option>
+                <option value="anthropic/claude-2">Claude 2</option>
+                <option value="google/palm-2-chat-bison">PaLM 2 Chat</option>
+            </select>
+            
+            <div class="prompt-suggestions">
+                <h3>Contoh Prompt:</h3>
+                <div class="suggestion-buttons">
+                    <button class="suggestion-btn">Jelaskan konsep machine learning dengan sederhana</button>
+                    <button class="suggestion-btn">Bantu saya menulis email profesional</button>
+                    <button class="suggestion-btn">Buatkan kode HTML untuk form login</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
